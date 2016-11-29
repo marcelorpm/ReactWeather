@@ -14,7 +14,8 @@ module.exports = {
         return res.data.main.temp;
       }
     }, function (err) {
-      throw new Error(err.message);
+      // throw new Error(err.message);
+      throw new Error('Unable to fetch weather for that location');
     });
   }
 }
